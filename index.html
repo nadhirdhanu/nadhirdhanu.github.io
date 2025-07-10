@@ -1,25 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Nama Kamu – Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Business Manager to Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <header>
-    <h1>Hai, saya Nama Kamu</h1>
-    <p>Bio singkat: pendidikan, keahlian, dsb.</p>
-  </header>
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/username/project1">Project 1</a> – Deskripsi singkat</li>
-      <!-- dst. -->
-    </ul>
-  </section>
-  <footer>
-    <p>Kontak: email@example.com • <a href="https://linkedin.com/in/username">LinkedIn</a></p>
-  </footer>
-  <script src="js/scripts.js"></script>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">FromFeedToCode</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Bridging <span>Livestock Management</span> with <span>Technology</span></h1>
+                <p>Former pet feed shop manager transitioning to software engineering, combining operational expertise
+                    with technical solutions</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Your Profile Picture">
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Technology Projects</h2>
+            <p class="section-subtitle">Solutions inspired by real business challenges</p>
+
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/feedstock-screenshot.png" alt="FeedStock Pro">
+                    </div>
+                    <div class="project-content">
+                        <h3>FeedStock Pro</h3>
+                        <p>Inventory management system with demand prediction, reducing waste by 30% in animal feed
+                            shops</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>React</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/agriteam-screenshot.png" alt="AgriTeam Track">
+                    </div>
+                    <div class="project-content">
+                        <h3>AgriTeam Track</h3>
+                        <p>Employee management system with gamification, increasing team engagement by 25%</p>
+                        <div class="tech-tags">
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/petfeed-screenshot.png" alt="PetFeed Mart">
+                    </div>
+                    <div class="project-content">
+                        <h3>PetFeed Mart</h3>
+                        <p>E-commerce platform for pet food with loyalty system and logistics integration</p>
+                        <div class="tech-tags">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>Vue.js</span>
+                        </div>
+                        <a href="#" class="project-link">Visit Demo →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <p class="section-subtitle">From animal feed to algorithms</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2019-2023</div>
+                    <div class="timeline-content">
+                        <h3>Manager - Sukses Makmur Feed</h3>
+                        <ul>
+                            <li>Increased sales by 40% through strategic product placement and cross-selling</li>
+                            <li>Developed Excel-based inventory tracking that became foundation for FeedStock Pro</li>
+                            <li>Managed team of 5 employees with performance-based incentive system</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022-Present</div>
+                    <div class="timeline-content">
+                        <h3>Tech Transition</h3>
+                        <ul>
+                            <li>Self-taught programming through online courses (Python, JavaScript, Web Dev)</li>
+                            <li>Developed 3 operational systems inspired by feed shop challenges</li>
+                            <li>Completed coursework in Data Structures, Algorithms, and Database Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills Matrix</h2>
+
+            <div class="skills-grid">
+                <div class="skills-column">
+                    <h3><i class="fas fa-code"></i> Technical</h3>
+                    <ul>
+                        <li>Python/JavaScript</li>
+                        <li>Web Development</li>
+                        <li>Database Design</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+
+                <div class="skills-column">
+                    <h3><i class="fas fa-users"></i> Management</h3>
+                    <ul>
+                        <li>Team Leadership</li>
+                        <li>Process Optimization</li>
+                        <li>Supply Chain Mgmt</li>
+                        <li>Budget Control</li>
+                    </ul>
+                </div>
+
+                <div class="skills-column">
+                    <h3><i class="fas fa-lightbulb"></i> Analytical</h3>
+                    <ul>
+                        <li>Problem-Solving</li>
+                        <li>Data-Driven Decisions</li>
+                        <li>Business Analysis</li>
+                        <li>UX Understanding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">For scholarship or job opportunities</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <p>From livestock feed to lines of code - an unconventional journey</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
