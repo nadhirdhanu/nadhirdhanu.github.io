@@ -12,6 +12,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Navbar scroll effect
 window.addEventListener('scroll', function () {
     const navbar = document.getElementById('navbar');
+    const heroBg = document.querySelector('.hero-bg');
+    const scrollPosition = window.pageYOffset;
+
+    heroBg.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    
     if (window.scrollY > 50) {
         navbar.style.padding = '15px 0';
         navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
