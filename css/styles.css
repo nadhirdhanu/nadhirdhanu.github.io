@@ -122,9 +122,12 @@ section {
 
 .hero .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
+    text-align: center;
+    padding: 1rem 0.5rem;
+    gap: 0.25rem;
+  }
 
 .hero-text {
     flex: 1;
@@ -149,15 +152,21 @@ section {
 
 .hero-image {
     flex: 1;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* opsional untuk memberi ruang */
+  }
+  
+  .hero-image img {
+    width: 150px;             /* Ukuran kecil, bisa disesuaikan */
+    height: 150px;
+    border-radius: 50%;      /* Membulatkan gambar */
+    object-fit: cover;       /* Crop proporsional */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--light); /* Tambahan agar tampil lebih bersih */
+  }
+  
 /* Projects Section */
 .project-grid {
     display: grid;
@@ -349,6 +358,9 @@ section {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-info h3 {

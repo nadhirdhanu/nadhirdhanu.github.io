@@ -38,6 +38,7 @@ if (contactForm) {
         const message = this.querySelector('textarea').value;
 
         // Here you would typically send the data to a server
+        
         console.log('Form submitted:', { name, email, message });
 
         // Show success message
